@@ -18,6 +18,11 @@ button[type=submit], button[type=back], input[type=button] {
 	cursor: pointer;
 }
 
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
+
 p {
 	color: red;
 }
@@ -108,6 +113,7 @@ table, th {
 </script>
 </head>
 <body background-color="pink">
+<div class="container">
 	<div class="header">
 		<h1>Travel Line</h1>
 		
@@ -118,7 +124,7 @@ table, th {
 				Us</a> <a href="retrival1.html">Retrieval</a> <a href="Admin_login.html">Admin
 				Login</a>
 		</div>
-	</div>
+	<div>
 	<center>
 		<br>
 		<h1>Select seat</h1>
@@ -242,6 +248,6 @@ table, th {
 		<button type="submit" value="continue" onclick="return countCheckboxes();">book</button>
 		<button type="back" value="back" formaction="Select_service.jsp">back</button>
 	</center>
-	</form>
+	</form></div>
 </body>
 </html>

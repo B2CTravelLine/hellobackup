@@ -11,7 +11,10 @@ table, th{
   border: 1px solid black;
 }
 
-
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -47,10 +50,9 @@ background: white;
 </style>
 </head>
 <body>
-<div class="header">
+
 <h1>Travel Line</h1>
-  <img src="images/bus.jpg" alt="bus" style="width:1000px;height:300px">
-</div>
+  <div class="container">
 <div class="nav-collapse">
 <div class="topnav">
 <a href="Add_Service.jsp">Add Service</a>
@@ -89,6 +91,6 @@ request.getAttribute("empdetails");
 <tr><td colspan="2"><input type="submit" value="update"/></td></tr>  
 </table>  
 </form>  
-</div>
+</div></div>
 </body>
 </html>

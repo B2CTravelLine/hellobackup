@@ -11,6 +11,10 @@ table, th {
 	border: 1px solid black;
 }
 
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
 .header {
 	background-color: #f1f1f1;
 	padding: 30px;
@@ -50,9 +54,10 @@ table, th {
 </script>
 </head>
 <body>
+
 	<div class="header">
 		<h1>Travel Line</h1>
-		
+		 <div class="container">
 		<div class="nav-collapse">
 
 			<div class="topnav">
@@ -79,7 +84,7 @@ table, th {
 					<tr>
 						<th>From:</th>
 						<th>To:</th>
-						<th>Journey-Time:</th>
+						<th>Journey-DATE:</th>
 					</tr>
 					<tr>
 						<td>${from}</td>
@@ -131,6 +136,6 @@ table, th {
 			</form>
 			<button onclick="location.href = 'Bus_Home.html';"  name="back">back</button>
 		</div>
-	</div>
+	</div></div>
 </body>
 </html>

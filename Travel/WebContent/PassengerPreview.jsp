@@ -16,6 +16,11 @@ button[type=submit], button[type=reset],button[type=cancel]{
   margin: 2px 2px;
   cursor: pointer;
 }
+
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -59,19 +64,18 @@ color:blue;
 </style>
 </head>
 <body >
-<div class="header">
+
 <h1>Travel Line</h1>
-  <img src="images\bus.jpg" alt="bus" style="width:850px;height:220px;">
-</div>
+  <div class="container">
 <div class="nav-collapse">
 
-<!-- <div class="topnav">
+<div class="topnav">
 
 <a href="Bus_Home.html">Home</a>
 <a href="ContactUs.html">Contact Us</a>
 <a href="retrival1.html">Retrieval</a>
 <a href="Admin_login.html">Admin Login</a>
-</div> -->
+</div>
 </div>
 <div align="center"><br>
 
@@ -81,7 +85,7 @@ PassengerServiceImpl ps=new PassengerServiceImpl();
 
 request.getAttribute("pdetails");
 %>
-<form action="ticketdetails" method="get">
+<form action="GetTicketDetails" method="get">
 <div style="width:550px;height:130px;border:10px solid #000;color:blue;background-color:LightGray"><br>
 
 <table style="width: 100%; border:100px">
@@ -101,6 +105,6 @@ request.getAttribute("pdetails");
 </div> 
 </form>
 
-</div>
+</div></div>
 </body>
 </html>

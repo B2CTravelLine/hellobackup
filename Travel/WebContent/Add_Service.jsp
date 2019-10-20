@@ -10,7 +10,10 @@ table, th{
   border: 1px solid black;
 }
 
-
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -51,7 +54,7 @@ color:blue;
 </head>
 <body>
 <h1>Travel Line</h1>
- 
+ <div class="container">
 <div class="nav-collapse">
 
 <div class="topnav">
@@ -94,6 +97,6 @@ Journey Time:<input type="number" min=1 max=24 name="jTime" required="required">
 <button type="submit"  value="submit"  id="submit" >submit</button>&nbsp;
 <button onclick="location.href = 'Admin.html';" id="myButton" name="">back</button>
 </form>
-</div>
+</div></div>
 </body>
 </html>

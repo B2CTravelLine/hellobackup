@@ -11,6 +11,10 @@ table, th{
   border: 1px solid black;
 }
 
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
 
 .header {
   background-color: #f1f1f1;
@@ -53,7 +57,7 @@ background: white;
 
 
 <h1>Travel Line</h1>
-  
+  <div class="container">
 <div class="nav-collapse">
 
 <div class="topnav">
@@ -66,45 +70,64 @@ background: white;
 
 <%request.getAttribute("tdetails"); %>
 <h2>Ticket Details</h2>
-<form action="DeleteServiceServlet" method="get">
+<form action="GetTicketServlet" method="get">
 <input type="hidden" name="ticketno" value="${ tdetails.passengerId}"/>
   <table style="width: 100%" border="100px">
-  <tr>
-    <th>ticket_no</th>
-     <td><c:out value="${ tdetails.passengerId}" /></td>
-    <th>Passenger Name</th> 
-     <td><c:out value="${ tdetails.passengerName}" /></td>
+  
+  	<tr>
+   			 <th>ticket_no</th>
+     			<td><c:out value="${ tdetails.passengerId}" /></td>
+    
+    </tr>
+    <tr>
+     			<th>Passenger Name</th> 
+     			<td><c:out value="${ tdetails.passengerName}" /></td>
      </tr>
      <tr>
-    <th>gender</th>
-     <td><c:out value="${ tdetails.gender}" /></td>
-    <th>age</th>
-      <td><c:out value="${ tdetails.age}" /></td>
+    			<th>gender</th>
+    			 <td><c:out value="${ tdetails.gender}" /></td>
+    
+      </tr>
+      <tr>
+      			<th>age</th>
+      			<td><c:out value="${ tdetails.age}" /></td>
       </tr>
      <tr>
-    <th>Fare</th>
-     <td><c:out value="${ tdetails.fare}" /></td>
-    <th>seat_no</th>
-    <td><c:out value="${ tdetails.seatNo}" /></td>
-    </tr><tr>
-	<th> From Station</th>
-	 <td><c:out value="${ tdetails.from}" /></td>
-	<th>To Station</th>
-	  <td><c:out value="${ tdetails.to}" /></td>
+    			<th>Fare</th>
+     			<td><c:out value="${ tdetails.fare}" /></td>
+     <tr>
+     </tr>			
+     
+    		<th>seat_no</th>
+    		<td><c:out value="${ tdetails.seatNo}" /></td>
+    </tr>
+    <tr>
+			<th> From Station</th>
+	 		<td><c:out value="${ tdetails.from}" /></td>
+	 </tr>
+	 <tr>
+	 
+			<th>To Station</th>
+	  		<td><c:out value="${ tdetails.to}" /></td>
   </tr>
   <tr>
-	<th>Service No</th>
-   <td><c:out value="${ tdetails.service_id}" /></td>
-   <th>Departure Date</th>
-    <td><c:out value="${ tdetails.departureTime}" /></td>
-   </tr><tr>
-    <th>Reporting Time(hr)</th>
-     <td><c:out value="${ tdetails.reporting}" /></td>
-     <td><button type="submit"  value="cancel ticket">cancel ticket</button></td>
-  </tr>
+			<th>Service No</th>
+   			<td><c:out value="${ tdetails.service_id}" /></td>
+   </tr>
+   <tr>
+   			<th>Departure Date</th>
+    		<td><c:out value="${ tdetails.departureTime}" /></td>
+   </tr>
+   <tr>
+   			 <th>Reporting Time(hr)</th>
+     			<td><c:out value="${ tdetails.reporting}" /></td>
+     </tr>
+     <tr>
+     		<td><button type="submit"  value="cancel ticket">cancel ticket</button></td>
+  	</tr>
   </table><br><br>
 </form>
 <button style="align:center;" onclick="window.print()">Print ticket</button>
-</div>
+</div></div>
 </body>
 </html>

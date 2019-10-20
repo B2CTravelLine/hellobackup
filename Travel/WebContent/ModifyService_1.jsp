@@ -9,7 +9,10 @@ table, th{
   border: 1px solid black;
 }
 
-
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -46,10 +49,9 @@ background: white;
 
 </head>
 <body>
-<div class="header">
+
 <h1>Travel Line</h1>
-  <img src="images/bus.jpg" alt="bus" style="width:1000px;height:300px">
-</div>
+ <div class="container">
 <div class="nav-collapse">
 <div class="topnav">
 <a href="Add_Service.jsp">Add Service</a>
@@ -64,6 +66,6 @@ Service Number:<input type="number" min="1" name="service_no" required="required
 <button type="submit"  value="submit" id="submit">Submit</button>&nbsp;
 <button type="submit" onclick="location.href = 'Admin.html';"  value="cancel">cancel</button>&nbsp;<br>
 </form>
-</div>
+</div></div>
 </body>
 </html>

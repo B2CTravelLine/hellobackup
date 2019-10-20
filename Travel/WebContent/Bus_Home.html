@@ -4,6 +4,11 @@
 <meta charset="ISO-8859-1">
 <title>Travel Line</title>
 <style>
+.container {
+height: 800px;
+background-color: #97CADB;
+}
+
 button[type=submit], button[type=reset] {
   background-color: #4CAF50;
   border: none;
@@ -49,8 +54,9 @@ background: white;
 }
 </style>
 </head>
-<body >
+<body>
 
+<div class="container">
 <h1>Travel Line</h1>
   
 <div class="nav-collapse">
@@ -66,7 +72,7 @@ background: white;
 <div align="center"><br>
 
 <h3>Searching for bus</h3>
-<form action="admin" method="get">
+<form action="SearchServiceServlet" method="get">
 From:<select name="from">
 <option>Hyderabad</option>
 <option>Guntur</option>
@@ -85,6 +91,7 @@ Date:<input type="text" id="text" name="dtime" required="required" placeholder="
 <button type="submit"  value="submit">Search</button>
 <button type="reset"  value="reset">Reset</button><br>
 </form>
+</div>
 </div>
 </body>
 </html>

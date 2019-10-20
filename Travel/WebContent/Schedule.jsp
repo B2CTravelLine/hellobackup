@@ -12,7 +12,10 @@ table, th{
   border: 1px solid black;
 }
 
-
+.container {
+		height: 800px;
+		background-color: #97CADB;
+}
 .header {
   background-color: #f1f1f1;
   padding: 30px;
@@ -52,7 +55,7 @@ background: white;
 <body>
 
 <h1>Travel Line</h1>
-  
+   <div class="container">
 <div class="nav-collapse">
 
 <div class="topnav">
@@ -93,6 +96,6 @@ background: white;
 </tr>
 </c:forEach>
 </table>
-</div>
+</div></div>
 </body>
 </html>

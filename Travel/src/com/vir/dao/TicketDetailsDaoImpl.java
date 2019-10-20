@@ -19,7 +19,7 @@ public class TicketDetailsDaoImpl implements TicketDetailsDao {
 		
 		try {
 			con = DBConnection.getConnection();
-			pst=con.prepareStatement("select t.ticketNo,t.bookingId,t.passengerId,t.sourceFrom,t.sourceTo,t.seatNo,t.fare,t.passengerName,t.age,t.gender,t.journeyDate from ticketDetails t inner join booking b on t.bookingId=b.bookingId inner join passenger p on t.passengerId=b.passengerId");
+			pst=con.prepareStatement("select t.ticket_No,t.booking_Id,t.passenger_Id,t.source_From,t.source_To,t.seat_No,t.fare,t.passenger_Name,t.age,t.gender,t.journey_Date from ticketDetails t inner join booking b on t.booking_Id=b.booking_Id inner join passenger p on t.passenger_Id=b.passenger_Id");
 			pst.setInt(1, ticketNo);
 			rs=pst.executeQuery();
 			if(rs.next()) {
