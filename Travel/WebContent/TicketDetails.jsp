@@ -51,10 +51,9 @@ background: white;
 <body>
 
 
-<div class="header">
+
 <h1>Travel Line</h1>
-  <img src="images\bus.jpg" alt="bus" style="width:1000px;height:300px;">
-</div>
+  
 <div class="nav-collapse">
 
 <div class="topnav">

@@ -50,10 +50,8 @@ color:blue;
 </style>
 </head>
 <body>
-<div class="header">
 <h1>Travel Line</h1>
-  <img src="images/bus.jpg" alt="bus" style="width:1000px;height:300px">
-</div>
+ 
 <div class="nav-collapse">
 
 <div class="topnav">
@@ -69,22 +67,22 @@ color:blue;
 <pre>
 From:<select name="from">
 <option>Hyderabad</option>
-<option>Tuni</option>
+<option>Guntur</option>
 <option>kakinada</option>
 <option>Vizag</option>
 </select>
 
    To:<select name="to">
-<option>Tuni</option>
+<option>Guntur</option>
 <option>Hyderabad</option>
 
 <option>kakinada</option>
 <option>Vizag</option>
 </select>
 
-     Capacity:<input type="number" name="capacity" min=36 max=36 required="required">
+     Capacity:<input type="number" name="capacity" min=36 max=50 required="required">
      
-           Fare:<input type="number" name="fare" min=400 required="required">
+           Fare:<input type="number" name="fare" min=400 max=800 required="required">
            
       Distance:<input type="text" name="distance" required="required">
       

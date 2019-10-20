@@ -110,8 +110,7 @@ table, th {
 <body>
 	<div class="header">
 		<h1>Travel Line</h1>
-		<img src="images\bus.jpg" alt="bus"
-			style="width: 850px; height: 220px;">
+		
 	</div>
 	<div class="nav-collapse">
 		<div class="topnav">
@@ -158,10 +157,10 @@ table, th {
 					<div class="seats">
 						<div class="row">
 							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
+								<label><input type="checkbox" class="cust-checkbox"  disabled id="01"
 									id="checkbox" value="01">01<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="02">02<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox"
+									type="checkbox"  disabled class="cust-checkbox" id="checkbox" value="02">02<span></span></label>&emsp;&emsp;
+								<label><input type="checkbox" class="cust-checkbox" 
 									id="checkbox" value="03">03<span></span></label> <label><input
 									type="checkbox" class="cust-checkbox" id="checkbox" value="04">04<span></span></label>
 							</div>
@@ -171,7 +170,7 @@ table, th {
 									type="checkbox" class="cust-checkbox" id="checkbox" value="06">06<span></span></label>&emsp;&emsp;
 								<label><input type="checkbox" class="cust-checkbox"
 									id="checkbox" value="07">07<span></span></label> <label
-									class="reserved"><input type="checkbox" disabled
+									class="reserved"><input type="checkbox" 
 									id="08" class="reserved" id="checkbox" value="08">08<span></span></label>
 
 							</div>
@@ -193,7 +192,7 @@ table, th {
 									type="checkbox" class="cust-checkbox" id="checkbox" value="16">16<span></span></label>
 							</div>
 							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
+								<label><input type="checkbox" class="cust-checkbox" disabled id="17"
 									id="checkbox" value="17">17<span></span></label> <label><input
 									type="checkbox" class="cust-checkbox" id="checkbox" value="18">18<span></span></label>&emsp;&emsp;
 								<label><input type="checkbox" class="cust-checkbox"
@@ -209,33 +208,8 @@ table, th {
 								<label><input type="checkbox" class="cust-checkbox"
 									id="checkbox" value="24">24<span></span></label>
 							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="25">25<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="26">26<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="27">27<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="28">28<span></span></label>
-
-							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="29">29<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="30">30<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="31">31<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="32">32<span></span></label>
-
-							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="33">33<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="34">34<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="35">35<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="36">36<span></span></label>
-
-							</div>
+							
+							
 						</div>
 					</div>
 		</div>
@@ -258,8 +232,8 @@ table, th {
 						<OPTION value="other">Other</OPTION>
 				</SELECT>
 				</TD>
-				<td><input type="hidden" name="fare" id="text4" value="${seat.fare }"   /></td>
-				<td><input type="hidden" name="serviceno" value="${seat.serviceId }"/></td>
+				<!-- <td><input type="hidden" name="fare" id="text4" value="${seat.fare }"   /></td>
+				<td><input type="hidden" name="serviceno" value="${seat.serviceId }"/></td> -->
 
 				<TD>seat number:<input type="number" name="seatno" id="text2" required="required"/></td>
 			</TR>

@@ -17,7 +17,7 @@ public class BusServiceDaoImpl implements BusServiceDao{
 		Connection con=null;
 		
 		try{  
-			String sql="select * from service where source_from=? and source_to=? and departion_time=?";
+			String sql="select * from service where source_from=? and source_to=? and departure_time=?";
 			con = DBConnection.getConnection(); 
 			PreparedStatement ps=con.prepareStatement(sql);
 			ps.setString(1,serviceFrom);
