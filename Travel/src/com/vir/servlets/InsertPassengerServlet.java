@@ -76,7 +76,7 @@ public class InsertPassengerServlet extends HttpServlet {
 			
 			request.setAttribute("pdetails", p);
 			
-			System.out.println("sucess msg");
+			System.out.println("success msg");
 			out.print("<p>Record saved successfully!</p>");  
 			request.getRequestDispatcher("PassengerPreview.jsp").forward(request, response); 
 		}

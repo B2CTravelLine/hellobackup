@@ -107,7 +107,7 @@ table, th {
 	}
 </script>
 </head>
-<body>
+<body background-color="pink">
 	<div class="header">
 		<h1>Travel Line</h1>
 		
@@ -232,8 +232,8 @@ table, th {
 						<OPTION value="other">Other</OPTION>
 				</SELECT>
 				</TD>
-				<!-- <td><input type="hidden" name="fare" id="text4" value="${seat.fare }"   /></td>
-				<td><input type="hidden" name="serviceno" value="${seat.serviceId }"/></td> -->
+				 <td><input type="hidden" name="fare" id="text4" value="${seat.fare }"   /></td>
+				<td><input type="hidden" name="serviceno" value="${seat.serviceId }"/></td>
 
 				<TD>seat number:<input type="number" name="seatno" id="text2" required="required"/></td>
 			</TR>
