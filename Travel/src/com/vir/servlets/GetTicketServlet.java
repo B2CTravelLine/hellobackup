@@ -45,7 +45,8 @@ public class GetTicketServlet extends HttpServlet {
 			if(tdetails!=null) {
 				request.setAttribute("tdetails", tdetails);
 				out.println("Bus Service Details");
-				RequestDispatcher rd=request.getRequestDispatcher("TicketDetails.jsp");
+				RequestDispatcher rd=request.getRequestDispatcher("Payment.html");
+				//RequestDispatcher rd=request.getRequestDispatcher("TicketDetails.jsp");
 				rd.forward(request, response);
 
 			}

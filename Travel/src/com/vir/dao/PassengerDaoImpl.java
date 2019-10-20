@@ -16,7 +16,7 @@ public class PassengerDaoImpl implements PassengerDao {
 		PreparedStatement pst=null;
 		ResultSet rs=null;
 		try {
-			pst=con.prepareStatement("select ticket_id,p.passenger_name,p.age,p.gender,p.fare,s.seatno,s.source_from,s.source_to,s.departure_time,s.journey_time,s.service_id from service s join passenger p where  s.service_id=p.service_id and ticket_id=?;");
+			pst=con.prepareStatement("select p.passenger_id as ticket_id,p.passenger_name,p.age,p.gender,p.fare,p.seatno,s.source_from,s.source_to,s.departure_time,s.journey_time,s.service_id from service s join passenger p where  s.service_id=p.service_id and passenger_id=?;");
 			pst.setInt(1,passengerId);
 			rs=pst.executeQuery();
 
@@ -121,7 +121,7 @@ public class PassengerDaoImpl implements PassengerDao {
 		PreparedStatement pst=null;
 		ResultSet rs=null;
 		try {
-			pst=con.prepareStatement("select ticket_id,passenger_name,age ,gender,p.fare,seatno,source_from,source_to,departure_time,journey_time,s.service_id from service s join passenger p where  s.service_id=p.service_id and s.service_id=? and seatno=?;");
+			pst=con.prepareStatement("select passenger_id as ticket_id,passenger_name,age ,gender,p.fare,seatno,source_from,source_to,departure_time,journey_time,s.service_id from service s join passenger p where  s.service_id=p.service_id and s.service_id=? and seatno=?;");
 			pst.setInt(1,service_no);
 			pst.setString(2, seatno);
 			rs=pst.executeQuery();
