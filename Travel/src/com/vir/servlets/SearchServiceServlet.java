@@ -47,9 +47,9 @@ public class SearchServiceServlet extends HttpServlet {
 		out.println(listServices);
 		request.setAttribute("listData", listServices);
 		if(listServices!=null) { 
-		out.println("successfully"); 
-		RequestDispatcher rd=request.getRequestDispatcher("Select_service.jsp"); 
-		rd.forward(request,response);
+			out.println("successfully"); 
+			RequestDispatcher rd=request.getRequestDispatcher("Select_service.jsp"); 
+			rd.forward(request,response);
 		} 
 		else 
 		{ out.println("Sorry......!!!!"); RequestDispatcher

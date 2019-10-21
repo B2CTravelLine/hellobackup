@@ -67,9 +67,7 @@ public class InsertPassengerServlet extends HttpServlet {
 		p.setService_id(sid);
 		
 		PassengerServiceImpl psi = new PassengerServiceImpl();
-		/*
-		 * String details = psi.insertDetails(p); request.setAttribute("pdetails", p);
-		 */
+		
 		String details = psi.insertDetails(p);
 		if(details.equals("SUCCESS"))   
 		{

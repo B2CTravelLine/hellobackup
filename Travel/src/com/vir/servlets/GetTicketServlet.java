@@ -40,7 +40,7 @@ public class GetTicketServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		PassengerServiceImpl ps = new PassengerServiceImpl();
-			int ticketId =Integer.parseInt( request.getParameter("ticketno"));
+			int ticketId =Integer.parseInt( request.getParameter("ticket_id"));
 			Passenger tdetails = ps.getDetails(ticketId);
 			if(tdetails!=null) {
 				request.setAttribute("tdetails", tdetails);

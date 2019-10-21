@@ -96,8 +96,7 @@ request.getAttribute("pdetails");
 <td>Service No: <input type="number" name="serviceno" style ="width:60PX;" value="${pdetails.service_id }"/></td>
 				
 </tr>
-
-                  </table> 
+</table> 
 <br>
 <button type="submit"  value="submit">Proceed</button>
 

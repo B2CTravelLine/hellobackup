@@ -123,7 +123,7 @@ background: white;
      			<td><c:out value="${ tdetails.reporting}" /></td>
      </tr>
      <tr>
-     		<td><button type="submit"  value="cancel ticket">cancel ticket</button></td>
+     		<td><button type="submit" onclick="cancel.html">cancel ticket</button></td>
   	</tr>
   </table><br><br>
 </form>

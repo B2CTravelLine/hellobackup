@@ -73,43 +73,7 @@ table, th {
 }
 </style>
 <script type="text/javascript">
-	function add() {
-		var boxes = document.f1.checkbox.length;
-		var txt = "";
-		num = 1;
-		for (var i = 0; i < boxes; i++) {
-			if (document.f1.checkbox[i].checked) {
-				txt = document.f1.checkbox[i].value + " ";
-			}
-		}
-		//fare = 400;
-		document.f1.text2.value = txt;
-		//document.f1.text4.value = fare;
-	}
 
-	function countCheckboxes() {
-		var inputElems = document.getElementsByTagName("input");
-		var count = 0;
-		for (var i = 0; i < inputElems.length; i++) {
-			if (inputElems[i].type === "checkbox"
-					&& inputElems[i].checked === true) {
-				count++;
-			}
-		}
-		if(count==0)
-			{
-			alert("select atleast one seat")
-			}
-		else if (count == 1) {
-
-			alert("seat selected successfully");
-			return true;
-
-		} else {
-			alert("Select only  One seat to continue");
-			return false;
-		}
-	}
 </script>
 </head>
 <body background-color="pink">
@@ -153,77 +117,11 @@ table, th {
 		<br>
 		<br>
 		<br>
-		<div
-			style="width: 220px; height: 250px; border: 1px solid #000; color: blue; background-color: LightGray">
+		
 			<br>
-			<br>
-			<body>
-				<form id="f1" name="f1" method="post" action="insertPassenger">
-					
-					<div class="seats">
-						<div class="row">
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"  disabled id="01"
-									id="checkbox" value="01">01<span></span></label> <label><input
-									type="checkbox"  disabled class="cust-checkbox" id="checkbox" value="02">02<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox" 
-									id="checkbox" value="03">03<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="04">04<span></span></label>
-							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="05">05<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="06">06<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="07">07<span></span></label> <label
-									class="reserved"><input type="checkbox" 
-									id="08" class="reserved" id="checkbox" value="08">08<span></span></label>
-
-							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="09">09<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="10">10<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" disabled id="11"
-									class="reserved" id="checkbox" value="11">11<span></span></label>
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="12">12<span></span></label>
-							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="13">13<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="14">14<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="15">15<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="16">16<span></span></label>
-							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" class="cust-checkbox" disabled id="17"
-									id="checkbox" value="17">17<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="18">18<span></span></label>&emsp;&emsp;
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="19">19<span></span></label> <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="20">20<span></span></label>
-							</div>
-							<div class="col-sm-4">
-								<label><input type="checkbox" disabled id="21"
-									class="reserved" id="checkbox" value="21">21<span></span></label>
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="22">22<span></span></label>&emsp;&emsp; <label><input
-									type="checkbox" class="cust-checkbox" id="checkbox" value="23">23<span></span></label>
-								<label><input type="checkbox" class="cust-checkbox"
-									id="checkbox" value="24">24<span></span></label>
-							</div>
-							
-							
-						</div>
-					</div>
-		</div>
-		</div>
-		</div>
-		<br> <input name="ok" type="button" id="buton1" onclick="add();"
-			value="ok" /><br>
-		<br>
+		<body>
+				
+		<form id="f1" name="f1" method="post" action="insertPassenger">
 		<TABLE id="dataTable" width="500px" border="1">
 
 			<TR>
@@ -245,7 +143,7 @@ table, th {
 			</TR>
 		</TABLE>
 		<br> <br>
-		<button type="submit" value="continue" onclick="return countCheckboxes();">book</button>
+		<button type="submit" value="continue">book</button>
 		<button type="back" value="back" formaction="Select_service.jsp">back</button>
 	</center>
 	</form></div>
